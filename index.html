@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Campus Connet | Student Dashboard</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+</head>
+<body>
+   <header>
+      <h2><i class="fa-solid fa-graduation-cap"> </i> Campus Connect</h2>
+      <p>Student View</p>
+      </header>
+
+      <div class="dashboard-layout">
+         <aside class="sidebar">
+            <a href="#dashboard"><i class="fa-solid fa-house"> </i><br> Dashboard</a>
+            <a href="#announcements"><i class="fa-solid fa-bullhorn"> </i> <br> Announcements</a>
+            <a href=""><i class="fa-regular fa-calendar-days"> </i> <br> Events</a>
+            <a href=""><i class="fa-solid fa-briefcase"> </i> <br> Opportunities</a>
+            <a href=""><i class="fa-solid fa-user-group"> </i> <br> Clubs & Communities</a>
+            <a href=""><i class="fa-solid fa-book-open"> </i> <br> Student resources</a>
+            <a href=""><i class="fa-solid fa-headset"> </i> <br> Help Desk</a>
+
+         </aside>
+         <main class="main-content">
+            <section id="dashboard" class="dashboard">
+               <div class="welcome">
+                  <h1>Student Dashboard</h1>
+                  <h3 class="head-dash">Welcome back, Student!</h3>
+                  <p class="par-dash">Your campus life, all in one place</p>
+                  <div class="main-cards">
+                     <div class="card">
+                        <h2><i class="fa-regular fa-calendar-days"></i> <br> 08</h2>
+                        <h3>Upcoming Events</h3>
+                        <p>View campus events.</p>
+                     </div>
+                     <div class="card">
+                        <h2><i class="fa-solid fa-briefcase"> </i> <br>04</h2>
+                        <h3>Opportunities</h3>
+                        <p>Explore internships and scholarships.</p>
+                     </div>
+                     <div class="card">
+                        <h2><i class="fa-solid fa-bullhorn"></i> <br> 06</h2>
+                        <h3>Announcents</h3>
+                        <p>Read the latest updates.</p>
+                     </div>
+                     <div class="card">
+                        <h2><i class="fa-solid fa-book-open"> </i> <br>10</h2>
+                        <h3>Student Resources</h3>
+                        <p>Find useful study matrials.</p>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <h2>Recent Activity</h2>
+                     <div class="in-card">
+                        <div class="box">
+                           <h3><i class="fa-solid fa-graduation-cap"> </i> Orientation Day</h3>
+                           <p class="date">20th Oct 2026</p>
+                           <p class="desc">- Students gathered in a hall listening to a speaker.</p>
+                           <p class="desc">- New students registering at desks.</p>
+                           <div class="box-btn">
+                              <a href="#events"><button>View details</button></a>
+                           </div>
+                        </div>
+                        <div class="box">
+                           <h3><i class="fa-solid fa-laptop"> </i> Coding Workshop</h3>
+                           <p class="date">22nd Oct 2026</p>
+                           <p class="desc">- Students working on laptops in a computer lab.</p>
+                           <p class="desc">- Instructor presenting code on a projector screen.</p>
+                           <div class="box-btn">
+                              <a href="#events"><button>View details</button></a>
+                           </div>
+                        </div>
+                        <div class="box">
+                           <h3><i class="fa-solid fa-trophy"> </i> Sports Tournament</h3>
+                           <p class="date">24th Oct 2026 <strong>Today!</strong></p>
+                           <p class="desc">- Football match in progress.</p>
+                           <p class="desc">- Students recieving trophies and medals.</p>
+                           <div class="box-btn">
+                              <a href="#events"><button>View details</button></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="announcements"></section>
+            <section id="events"></section>
+            <section id="opportunities"></section>
+            <section id="clubs"></section>
+            <section id="resoures"></section>
+            <section id="help"></section>
+         </main>
+      </div>
+   <script src="script.js"></script>
+</body>
+</html>
