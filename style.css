@@ -159,3 +159,183 @@ header p{
    border: none;
    border-radius: 20px;
 }
+.announcements {
+   padding: 30px;
+   min-height: 100vh;
+}
+
+.announcement-heading {
+   margin-bottom: 25px;
+}
+
+.announcement-heading h1 {
+   color: #fbbf24;
+   font-size: 35px;
+   margin-bottom: 8px;
+}
+
+.announcement-heading p {
+   color: #64948c;
+   font-size: 20px;
+}
+.featured-announcement {
+   background: linear-gradient(135deg, #1e3a8a, #2563eb);
+   color: white;
+   padding: 30px;
+   border-radius: 15px;
+   margin-bottom: 30px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notice-label {
+   display: inline-block;
+   background: #fbbf24;
+   color: #1e293b;
+   padding: 6px 12px;
+   border-radius: 20px;
+   font-size: 11px;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+
+.featured-announcement h2 {
+   font-size: 23px;
+   margin-bottom: 12px;
+}
+
+.featured-announcement p {
+   line-height: 1.7;
+   margin-bottom: 12px;
+}
+
+.featured-announcement .date {
+   color: #dbeafe;
+   font-size: 13px;
+}
+
+.announcement-categories {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+   margin-bottom: 25px;
+}
+
+.announcement-categories button {
+   padding: 9px 18px;
+   border: 1px solid #cbd5e1;
+   background: white;
+   color: #334155;
+   border-radius: 20px;
+   cursor: pointer;
+   transition: 0.3s ease;
+}
+
+.announcement-categories button:hover {
+   background: #2563eb;
+   color: white;
+   border-color: #2563eb;
+}
+.announcement-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 22px;
+}
+
+.announcement-card {
+   background: white;
+   padding: 23px;
+   border-radius: 12px;
+   border: 1px solid #e2e8f0;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcement-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+   display: inline-block;
+   background: #dbeafe;
+   color: #1d4ed8;
+   padding: 5px 12px;
+   border-radius: 15px;
+   font-size: 12px;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+
+.announcement-card h3 {
+   color: #1e293b;
+   font-size: 19px;
+   margin-bottom: 12px;
+}
+
+.announcement-card p {
+   color: #64748b;
+   line-height: 1.6;
+   font-size: 14px;
+   margin-bottom: 15px;
+}
+
+.announcement-card .date {
+   font-size: 12px;
+   color: #94a3b8;
+}
+
+.announcement-card a {
+   display: inline-block;
+   color: #2563eb;
+   font-weight: bold;
+   text-decoration: none;
+   margin-top: 5px;
+}
+
+.announcement-card a:hover {
+   color: #1e3a8a;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+   .announcements {
+      padding: 18px;
+   }
+
+   .announcement-container {
+      grid-template-columns: 1fr;
+   }
+
+   .announcement-heading h1 {
+      font-size: 23px;
+   }
+
+   .featured-announcement {
+      padding: 22px;
+   }
+
+   .featured-announcement h2 {
+      font-size: 20px;
+   }
+
+}
+
+@media (max-width: 480px) {
+
+   .announcement-categories {
+      gap: 8px;
+   }
+
+   .announcement-categories button {
+      padding: 8px 13px;
+      font-size: 12px;
+   }
+
+}
+.announcement-categories button.active {
+   background: #2563eb;
+   color: white;
+   border-color: #2563eb;
+}
